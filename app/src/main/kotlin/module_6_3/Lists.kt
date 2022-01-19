@@ -14,18 +14,21 @@ fun main() {
 	val secondEmptyMassiv = emptyArray<Char>()
 
 	// Конструкции для неизменяемых списков
+	// создание списка через функцию конструктор
+	// предоставление лямбда функции для инициализации каждого элемента
 	val secondList = List<Int>(5){0}
 	val secondCarList = List<String>(3){index -> "Car №${index}"}
 
 	// Изменяемые списки
 	val mutableSecondList = MutableList<Int>(5){0}
 	val mutableSecondCarList = MutableList<String>(3){index ->  "Car №${index}"}
-//	sravnenie()
+	sravnenie()
 	obrashenie()
 }
 
 fun sravnenie(){
 	val list = listOf<Int>(1, 2, 3, 4, 5)
+	println("last index of = ${list[list.lastIndex]}")
 	val mutableList = mutableListOf<Int>(1, 2, 3, 4, 5)
 
 	println(mutableList.size)
@@ -34,6 +37,7 @@ fun sravnenie(){
 	mutableList.add(6)
 	mutableList.add(7)
 	println(mutableList.size)
+	// выводит элементы в строку и разделяет символом
 	println(mutableList.joinToString(", "))
 }
 

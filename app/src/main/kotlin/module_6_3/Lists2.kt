@@ -10,6 +10,22 @@ fun main() {
 	println(numbers)
 }
 
+fun dopolnitelnMassiv()
+{
+	// создаем массив 10 элементов и заполняем рандомными значениями от -10 до 10
+	val numbers = MutableList(10){ Random.nextInt(-10, 10)}
+	println(numbers)
+	val candidatesToRemove = mutableListOf<Int>()
+	numbers.forEach {
+		if (it < 0)
+			candidatesToRemove.add(it)
+	}
+	println(candidatesToRemove)
+	// removeAll удаляет элементы из другой коллекции, если они совпадают
+	numbers.removeAll(candidatesToRemove)
+	println(numbers)
+}
+
 fun iteratorHasNext()
 {
 	// создаем массив 10 элементов и заполняем рандомными значениями от -10 до 10
@@ -27,18 +43,3 @@ fun iteratorHasNext()
 }
 
 
-fun dopolnitelnMassiv()
-{
-	// создаем массив 10 элементов и заполняем рандомными значениями от -10 до 10
-	val numbers = MutableList(10){ Random.nextInt(-10, 10)}
-	println(numbers)
-	val candidatesToRemove = mutableListOf<Int>()
-	numbers.forEach {
-		if (it < 0)
-			candidatesToRemove.add(it)
-	}
-	println(candidatesToRemove)
-	// removeAll удаляет элементы из другой коллекции, если они совпадают
-	numbers.removeAll(candidatesToRemove)
-	println(numbers)
-}
