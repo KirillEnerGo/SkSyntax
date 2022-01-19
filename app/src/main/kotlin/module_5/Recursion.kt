@@ -19,11 +19,11 @@ fun calculatedSumRecursive(n: Int): Int {
 
 // рекурсивный вызов заменили обычным циклом, если рекурсивный переполняется
 // хвостовая рекурсия tailrec
-tailrec fun calculatedSumRecursiveTailrec(n: Int, accum: Int = 0): Int {
+tailrec fun calculatedSumRecursiveTailrec(n: Int, currentSum: Int = 0): Int {
     return if(n == 0){
-        accum
+        currentSum
     } else{
-        return calculatedSumRecursiveTailrec(n - 1, accum + n)
+        return calculatedSumRecursiveTailrec(n - 1, currentSum + n)
         // сделали последним в нашей функции, чтобы работал tailrec
     }
 }
