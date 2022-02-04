@@ -1,4 +1,4 @@
-package module_7_Constructor
+package module_7.constructor
 
 fun main() {
 //	val vw = CarConstructor(brand = "VW", model = "Passat", color = "Green")

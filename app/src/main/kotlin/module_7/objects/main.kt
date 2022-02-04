@@ -1,6 +1,6 @@
-package module_7_objects
+package module_7.objects
 
-import module_7_gettersSetters.CarConsGS
+import module_7.gettersAndSetters.CarConsGS
 
 fun main() {
 	// к обьекту обращаемся напрямую, не через экземпляр(как в классе)
@@ -10,13 +10,13 @@ fun main() {
 
 	val tower1 = EiffelTower
 	val tower2 = EiffelTower
-	println("tower 1 backlights on ? - ${tower1.backlightsOn}")
-	println("tower 2 backlights on ? - ${tower2.backlightsOn}")
+	println("tower 1 backlights on ? - ${EiffelTower.backlightsOn}")
+	println("tower 2 backlights on ? - ${EiffelTower.backlightsOn}")
 
-	tower1.turnbacklightsOn()
+	EiffelTower.turnbacklightsOn()
 
-	println("tower 1 backlights on ? - ${tower1.backlightsOn}")
-	println("tower 2 backlights on ? - ${tower2.backlightsOn}")
+	println("tower 1 backlights on ? - ${EiffelTower.backlightsOn}")
+	println("tower 2 backlights on ? - ${EiffelTower.backlightsOn}")
 
 	println("Wheels count - ${CarConsGS.wheelsCount}")
 	val classType = CarConsGS.getCarClass(3.8)

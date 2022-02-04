@@ -1,4 +1,4 @@
-package module_7_oop
+package module_7.oop
 
 import kotlin.random.Random
 

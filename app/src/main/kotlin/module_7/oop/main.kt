@@ -1,4 +1,4 @@
-package module_7_oop
+package module_7.oop
 
 fun main() {
 	val auto = Car()

@@ -1,4 +1,4 @@
-package module_7_Constructor
+package module_7.constructor
 
 import kotlin.random.Random
 

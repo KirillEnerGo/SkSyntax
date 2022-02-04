@@ -1,4 +1,4 @@
-package module_7_objects
+package module_7.objects
 
 object EiffelTower {
 	var backlightsOn = false

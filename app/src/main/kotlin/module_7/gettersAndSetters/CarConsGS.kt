@@ -1,4 +1,4 @@
-package module_7_gettersSetters
+package module_7.gettersAndSetters
 
 import kotlin.random.Random
 
