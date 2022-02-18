@@ -11,7 +11,6 @@ fun main() {
 
 	val renault = CarConstructor(descriptor = "Renault" to "Logan", color = "Brown")
 	printInfo(renault)
-
 }
 
 fun printInfo(car: CarConstructor)

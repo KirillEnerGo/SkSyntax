@@ -67,6 +67,4 @@ fun main() {
 	val sortedMapCompareByKey = priceList.toSortedMap(compareBy<String>{ it.length }.thenBy{ it })
 	// как отсортировать по значению
 	//	val sortedMapCompareByValue = priceList.toSortedMap(compareBy<Int>{it.value})
-
-
 }

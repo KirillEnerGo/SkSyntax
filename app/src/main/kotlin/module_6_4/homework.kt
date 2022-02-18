@@ -22,7 +22,6 @@ fun main() {
 	var sumOfSizeSet = setOfSortedListOfNumbersAbonents.sumOf { it.length }
 	println("length of all nums is = $sumOfSizeSet")
 //	var sortedMap = setOfSortedListOfNumbersAbonents
-
 }
 
 //fun mapOfNumbers(sortedSet: Set)

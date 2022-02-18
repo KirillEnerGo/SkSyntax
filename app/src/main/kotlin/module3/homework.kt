@@ -4,8 +4,6 @@ fun main() {
 	var str = "F2p)v\"y233{0->c}ttelciFc"
 
 	println("${part1(str)} ${part2(str)}")
-
-
 }
 fun part1(str: String): String{
 //	println(str.length)

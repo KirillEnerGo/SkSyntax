@@ -23,5 +23,4 @@ fun main() {
     } else {
         println("string is null")
     }
-
 }

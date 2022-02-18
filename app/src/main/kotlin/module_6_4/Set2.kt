@@ -15,5 +15,4 @@ fun main() {
 	// автобусы которые ходят между севером и югом, то есть пересекаются
 	val globalBus = northBusSet.intersect(southBusSet)
 	println(globalBus)
-
 }
